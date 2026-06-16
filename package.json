@@ -1,0 +1,48 @@
+{
+  "name": "my-docker-api",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm run build && vite",
+    "build": "pnpm format && vue-tsc -b && vite build",
+    "clean": "rm -rf dist",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "@lucide/vue": "^1.17.0",
+    "vue": "^3.5.34",
+    "vue-router": "^5.1.0",
+    "yaml": "^2.9.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@tailwindcss/forms": "^0.5.11",
+    "@tailwindcss/typography": "^0.5.20",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.9.1",
+    "@vitejs/plugin-vue": "^6.0.6",
+    "@vue/compiler-dom": "^3.5.35",
+    "@vue/compiler-sfc": "^3.5.35",
+    "@vue/tsconfig": "^0.9.1",
+    "autoprefixer": "^10.5.0",
+    "eslint-plugin-simple-import-sort": "^13.0.0",
+    "eslint-plugin-unused-imports": "^4.4.1",
+    "jest": "^30.4.2",
+    "postcss": "^8.5.15",
+    "prettier": "^3.8.3",
+    "tailwindcss": "^3.4.19",
+    "ts-jest": "^29.4.11",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.60.0",
+    "unplugin-vue-components": "^32.1.0",
+    "vite": "^8.0.12",
+    "vue-tsc": "^3.3.2"
+  }
+}
